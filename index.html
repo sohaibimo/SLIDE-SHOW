@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sliders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <img src="logo-removebg-preview.png" class="logo img-fluid" alt="Logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto fs-6 pe-5 ps-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First Slider (Background Slideshow) -->
+    <div class="slideshow"></div>
+
+    <!-- Second Slider Section -->
+    <section class="new-section">
+        <div class="container text-center my-5">
+            <h2>Our Gallery</h2>
+            <p>Explore some of our finest works in the gallery below.</p>
+        </div>
+
+        <!-- Second Slider (Custom JavaScript Slider) -->
+        <div class="custom-slider" id="gallerySlider">
+            <div class="slider-wrapper">
+                <img src="pexels-mahdibafande-14891335.jpg" class="slider-image" alt="Slide 1">
+                <img src="pexels-mian-rizwan-250562-29089596.jpg" class="slider-image" alt="Slide 2">
+                <img src="pexels-efrem-efre-2786187-29093577.jpg" class="slider-image" alt="Slide 3">
+            </div>
+            <button class="prev" onclick="moveSlide(-1, 'gallerySlider')">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 'gallerySlider')">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Third Slider Section -->
+    <section class="new-section">
+        <div class="container text-center my-5">
+            <h2>Featured Work</h2>
+            <p>Check out some of our featured projects below.</p>
+        </div>
+
+        <!-- Third Slider (Automatic Slider) -->
+        <div class="custom-slider" id="featuredSlider">
+            <div class="slider-wrapper">
+                <img src="pexels-chente8888-10300690.jpg" class="slider-image" alt="Featured Slide 1">
+                <img src="pexels-120531107-28550799.jpg" class="slider-image" alt="Featured Slide 2">
+                <img src="pexels-osman-kosar-1963391-28838485.jpg" class="slider-image" alt="Featured Slide 3">
+            </div>
+            <button class="prev" onclick="moveSlide(-1, 'featuredSlider')">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 'featuredSlider')">&#10095;</button>
+        </div>
+    </section>
+
+   
+ <!-- Fourth Slider Section -->
+<section class="new-section">
+    <div class="container text-center my-5">
+        <h2>Testimonials</h2>
+        <p>What our clients say about us.</p>
+    </div>
+
+    <!-- Fourth Slider (Fade Effect) -->
+    <div class="custom-slider" id="testimonialSlider">
+        <div class="slider-wrapper">
+            <div class="slider-image" style="display: block;">
+                <img src="pexels-lokmansevim-18807893.jpg" alt="Client A" class="testimonial-image">
+                <p>"This is the best service I have ever used!" - Client A</p>
+            </div>
+            <div class="slider-image" style="display: none;">
+                <img src="pexels-tatianasyrikova-3933025.jpg" alt="Client B" class="testimonial-image">
+                <p>"Absolutely fantastic experience!" - Client B</p>
+            </div>
+            <div class="slider-image" style="display: none;">
+                <img src="pexels-darkshadephotos-19245169.jpg" alt="Client C" class="testimonial-image">
+                <p>"I would recommend this to anyone!" - Client C</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fifth Slider Section -->
+<section class="new-section">
+    <div class="container text-center my-5">
+        <h2>Our Highlights</h2>
+        <p>Explore our standout projects in the grid below.</p>
+    </div>
+
+    <!-- Fifth Slider (Grid Style) -->
+    <div class="grid-slider" id="highlightsGrid">
+        <div class="grid-item">
+            <img src="pexels-kirandeepsingh-28579997.jpg" alt="Highlight 1">
+            <div class="overlay">
+                <h3>Project Title 1</h3>
+                <p>Brief description of Project 1.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="pexels-mikhail-nilov-8542538.jpg" alt="Highlight 2">
+            <div class="overlay">
+                <h3>Project Title 2</h3>
+                <p>Brief description of Project 2.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="pexels-dibakar-roy-2432543-28436333.jpg" alt="Highlight 3">
+            <div class="overlay">
+                <h3>Project Title 3</h3>
+                <p>Brief description of Project 3.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="pexels-ron-lach-9037596.jpg" alt="Highlight 4">
+            <div class="overlay">
+                <h3>Project Title 4</h3>
+                <p>Brief description of Project 4.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="pexels-ben-mack-5707648.jpg" alt="Highlight 4">
+            <div class="overlay">
+                <h3>Project Title 4</h3>
+                <p>Brief description of Project 4.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="pexels-ben-mack-5707648.jpg" alt="Highlight 4">
+            <div class="overlay">
+                <h3>Project Title 4</h3>
+                <p>Brief description of Project 4.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
